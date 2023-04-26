@@ -1,0 +1,1 @@
+# ariane6-launching

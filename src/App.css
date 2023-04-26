@@ -1,0 +1,31 @@
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.command {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.switches {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.launcher {
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+}
+
+.go {
+  background-color: greenyellow;
+}
+
