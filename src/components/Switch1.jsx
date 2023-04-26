@@ -1,4 +1,4 @@
-const Switch1 = ({setSwitch1}) => {
+const Switch1 = ({setSwitch1, setSwitch2, setSwitch3}) => {
 
   const isTrue = () => {
     setSwitch1(true);

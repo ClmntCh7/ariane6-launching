@@ -3,6 +3,7 @@ import "./App.css";
 import Switch1 from "./components/Switch1";
 import Switch2 from "./components/Switch2";
 import Switch3 from "./components/Switch3";
+import Switch from "./components/Switch";
 import Launcher from "./components/Launcher";
 
 const App = () => {
@@ -14,9 +15,12 @@ const App = () => {
     <div className="container">
       <div className="command">
         <div className="switches">
-          <Switch1 switch1={switch1} setSwitch1={setSwitch1}></Switch1>
+          {/* <Switch1 switch1={switch1} setSwitch1={setSwitch1}></Switch1>
           <Switch2 switch2={switch2} setSwitch2={setSwitch2}></Switch2>
-          <Switch3 switch3={switch3} setSwitch3={setSwitch3}></Switch3>
+          <Switch3 switch3={switch3} setSwitch3={setSwitch3}></Switch3> */}
+          <Switch switch1={switch1} setSwitch1={setSwitch1}></Switch>
+          <Switch switch2={switch2} setSwitch2={setSwitch2}></Switch>
+          <Switch switch3={switch3} setSwitch3={setSwitch3}></Switch>
         </div>
         <Launcher switch1={switch1} setSwitch1={setSwitch1} switch2={switch2} setSwitch2={setSwitch2} switch3={switch3} setSwitch3={setSwitch3}></Launcher>
         <button type="reset" onClick={()=> {
