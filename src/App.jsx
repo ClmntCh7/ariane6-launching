@@ -19,6 +19,9 @@ const App = () => {
           <Switch3 switch3={switch3} setSwitch3={setSwitch3}></Switch3>
         </div>
         <Launcher switch1={switch1} setSwitch1={setSwitch1} switch2={switch2} setSwitch2={setSwitch2} switch3={switch3} setSwitch3={setSwitch3}></Launcher>
+        <button type="reset" onClick={()=> {
+          return setSwitch1(false), setSwitch2(false), setSwitch3(false)
+        }}>Reset</button>
       </div>
     </div>
   );
