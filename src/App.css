@@ -1,19 +1,56 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  align-items: center;
+  justify-content: start;
+  color: #5C48D3;
+}
+
+.header p {
+font-size: 32px;
+padding: 0 20px;
 }
 
 .command {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 
 .switches {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 15px;
+}
+
+.switch{
+display: flex;
+gap: 15px;
+}
+
+.active {
+  background-color:#5C48D3;
+  color:white;
+}
+
+.inactive {
+  background-color:white;
+  color:#5C48D3;
 }
 
 .launcher {
@@ -23,7 +60,29 @@
   justify-content: center;
   align-items: center;
   background-color: salmon;
+  border-radius: 10%;
 }
+
+.reset {
+  display: flex;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.reset button {
+  background-color:#5C48D3;
+  color: white;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+.reset button:active {
+  background-color: white;
+  border: #5C48D3 1px solid;
+  color: #5C48D3;
+}
+
+
 
 .go {
   background-color: greenyellow;
